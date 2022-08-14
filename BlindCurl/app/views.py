@@ -27,7 +27,7 @@ def home(request):
         return render(request, "app/home.html", {'form': form})
 
 def about(request):
-    return HttpResponse("NO ABOUT")
+    return render(request, 'app/about.html')
 
 def contact(request):
     return HttpResponse("NO RESPONSE")
